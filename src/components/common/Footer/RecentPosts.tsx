@@ -1,12 +1,11 @@
-// import Image from "next/image";
-
+import { type RecentPost } from "@/lib/types";
 import Image from "next/image";
 
-// interface RecentPostsProps {
-//   posts: RecentPost[];
-// }
+interface RecentPostsProps {
+  posts: RecentPost[];
+}
 
-export function RecentPosts({ posts }) {
+export function RecentPosts({ posts }: RecentPostsProps) {
   return (
     <div>
       <h3 className="text-xl font-semibold text-white mb-6">Recent Post</h3>
